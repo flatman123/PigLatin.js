@@ -34,20 +34,17 @@ function prepConsonant(arr, vowels, numOfVowels){
 };
 
 
-function run(){
-
-      function startPiglatin(str) {           
-            let getResults = vowelChecker(str);
-            let isVowel = getResults.isVowel;
-            let wrd = getResults.splitWord;
-            let vowels = getResults.vowels;
-            let vowelCntr = getResults.vowelCntr;
-            let consonant = prepConsonant(wrd, vowels, vowelCntr);
-            
-            return !isVowel ? consonant : str + 'way';
-      }
-      return startPiglatin;
+function translatePigLatin(str) {           
+       let getResults = vowelChecker(str);
+       let isVowel = getResults.isVowel;
+       let wrd = getResults.splitWord;
+       let vowels = getResults.vowels;
+       let vowelCntr = getResults.vowelCntr;
+       let consonant = prepConsonant(wrd, vowels, vowelCntr);
+         
+        return !isVowel ? consonant : str + 'way';
 };
 
-let translatePigLatin = run();
+
+
 translatePigLatin("consonant");
