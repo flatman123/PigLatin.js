@@ -1,5 +1,5 @@
 
-
+//Without Regex
 
 function vowelChecker(str){
       let splitUpWord = str.split(''); // ['a','p','p','l','e'];
